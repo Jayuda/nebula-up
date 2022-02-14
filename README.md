@@ -9,7 +9,8 @@ Also, it's optimized to leverage China Repo Mirrors(docker, brew, gitee, etc...)
 macOS and Linux with Shell:
 
 ```bash
-curl -fsSL nebula-up.siwei.io/install.sh | bash
+export WOKRING_PATH=/home/DOCKER/NEBULA-UP
+curl -fsSL https://raw.githubusercontent.com/Jayuda/nebula-up/main/install.sh | bash
 ```
 ![nebula-up-demo-shell](./images/nebula-up-demo-shell.png)
 

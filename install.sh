@@ -433,8 +433,12 @@ function main {
 		fi
 	fi
 
+	if [ -z "$WOKRING_PATH" ]; then
+		logger_error "Please provide env WOKRING_PATH - that store your nebula "
+		exit
+	fi
+
 	CURRENT_PATH="$pwd"
-	WOKRING_PATH="$HOME/.nebula-up"
 	mkdir -p $WOKRING_PATH && cd $WOKRING_PATH
 	PLATFORM=$(get_platform)
 	CN_NETWORK=false
